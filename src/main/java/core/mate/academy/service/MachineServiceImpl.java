@@ -6,7 +6,6 @@ import core.mate.academy.model.Machine;
 import core.mate.academy.model.Truck;
 import java.util.ArrayList;
 import java.util.List;
-
 /**
  * Your implementation of MachineService.
  */
@@ -16,10 +15,12 @@ public class MachineServiceImpl implements MachineService<Machine> {
         if (type == Bulldozer.class) {
             List<Bulldozer> bulldozers = new BulldozerProducer().get();
             return new ArrayList<>(bulldozers);
-        } else if (type == Excavator.class) {
+        }
+        if (type == Excavator.class) {
             List<Excavator> excavators = new ExcavatorProducer().get();
             return new ArrayList<>(excavators);
-        } else if (type == Truck.class) {
+        }
+        if (type == Truck.class) {
             List<Truck> trucks = new TruckProducer().get();
             return new ArrayList<>(trucks);
         }
