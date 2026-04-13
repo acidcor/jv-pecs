@@ -8,7 +8,6 @@ public class Excavator extends Machine {
     private double bucketVolume;
     private double bucketWidth;
 
-
     public Excavator() {
     }
 
