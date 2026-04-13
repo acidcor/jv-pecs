@@ -1,5 +1,5 @@
 package core.mate.academy.model;
-public interface Workable {
 
+public interface Workable {
     void doWork();
 }
